@@ -16,7 +16,7 @@ A simple memory card game where you flip cards and try to find matching pairs. B
 
 ## How to play
 
-Just download the `memory-game.html` file and open it in your browser. No setup needed.
+Open the live website here: [Try the Live Demo](https://memory-jade-eight.vercel.app/)
 
 1. Click any card to flip it
 2. Click another card to find its match
