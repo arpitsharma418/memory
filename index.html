@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Memory</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Syne+Mono&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>MEMORY</h1>
+  <p class="tagline">flip · match · win</p>
+</header>
+
+<div class="stats">
+  <div class="stat">
+    <span class="stat-val" id="movesVal">0</span>
+    <span class="stat-label">Moves</span>
+  </div>
+  <div class="divider"></div>
+  <div class="stat">
+    <span class="stat-val" id="matchesVal">0</span>
+    <span class="stat-label">Matched</span>
+  </div>
+  <div class="divider"></div>
+  <div class="stat">
+    <span class="stat-val" id="timerVal">0s</span>
+    <span class="stat-label">Time</span>
+  </div>
+</div>
+
+<div class="difficulty">
+  <button class="diff-btn active" data-cols="4" data-pairs="8">Easy</button>
+  <button class="diff-btn" data-cols="5" data-pairs="10">Medium</button>
+  <button class="diff-btn" data-cols="6" data-pairs="18">Hard</button>
+</div>
+
+<div class="grid cols-4" id="grid"></div>
+
+<div class="controls">
+  <button class="btn btn-primary" id="btnNew">New Game</button>
+</div>
+
+<!-- Win Screen -->
+<div class="overlay" id="overlay">
+  <h2>YOU WIN!</h2>
+  <p>Nice memory 🧠</p>
+  <div class="final-stats">
+    <div class="stat">
+      <span class="stat-val" id="finalMoves">0</span>
+      <span class="stat-label">Moves</span>
+    </div>
+    <div class="divider"></div>
+    <div class="stat">
+      <span class="stat-val" id="finalTime">0s</span>
+      <span class="stat-label">Time</span>
+    </div>
+  </div>
+  <button class="btn btn-primary" id="btnPlayAgain">Play Again</button>
+</div>
+
+<Script src="script.js"></Script>
+</body>
+</html>
